@@ -14,8 +14,10 @@
       "resolveJsonModule": true,
       "isolatedModules": true,
       "noEmit": true,
-      "jsx": "react-jsx"
+      "jsx": "react-jsx",
+      "noImplicitAny": false,
+      "types": ["node", "jest", "@testing-library/jest-dom"]
     },
     "include": ["src/**/*.ts", "tests/**/*.ts"],
-    "exclude": ["node_modules", ".vscode"]
+    "exclude": ["node_modules", ".vscode", "**/tests/*.test.ts", "index.d.ts"]
   }
